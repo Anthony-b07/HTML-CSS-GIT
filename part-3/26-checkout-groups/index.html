@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>26 - Checkout Groups - HTML, CSS and Git Exercises</title>
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/week3-forms.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="site-wrapper">
-      <main>
-        <div class="shopping-basket">
-          <h1 class="shopping-basket__title">Your Shopping Basket</h1>
-          <table class="shopping-basket__items">
-            <tr>
-              <th>Product</th>
-              <th>Size</th>
-              <th>Units</th>
-              <th>Price</th>
-            </tr>
-            <tr>
-              <td>
-                <div class="shopping-basket__product">
-                  <img src="/images/20-shirts.jpg" alt="Codi t-shirts in black" />
-                  <p>Codi t-shirt, black</p>
-                </div>
-              </td>
-              <td>Medium</td>
-              <td>1</td>
-              <td>£10.00</td>
-            </tr>
-          </table>
-        </div>
+        <main>
+            <div class="shopping-basket">
+                <h1 class="shopping-basket__title">Your Shopping Basket</h1>
+                <table class="shopping-basket__items">
+                    <tr>
+                        <th>Product</th>
+                        <th>Size</th>
+                        <th>Units</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="shopping-basket__product">
+                                <img src="/images/20-shirts.jpg" alt="Codi t-shirts in black" />
+                                <p>Codi t-shirt, black</p>
+                            </div>
+                        </td>
+                        <td>Medium</td>
+                        <td>1</td>
+                        <td>£10.00</td>
+                    </tr>
+                </table>
+            </div>
 
-        <div class="checkout">
-          <h2 class="checkout__title">Checkout</h2>
-          <form method="GET" id="checkout-form" class="checkout__form">
-            <!-- Add the form fields here -->
-
-            <button type="submit">Complete Purchase</button>
-          </form>
-        </div>
-      </main>
+            <div class="checkout">
+                <h2 class="checkout__title">Checkout</h2>
+                <form method="GET" id="checkout-form" class="checkout__form">
+                    <!-- Add the form fields here -->
+                    <fieldset>
+                        <legend>Billing Address</legend>
+                        <label for="address1">Adress Line 1</label>
+                        <input type="text" name="" id="address1">
+                        <label for="address2">Adress Line 2</label>
+                        <input type="text" name="" id="address2">
+                        <label for="post-Code">Post Code</label>
+                        <input type="text" name="" id="post-Code">
+                        <label for="city">City</label>
+                        <input type="text" name="" id="city">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Delivery Address</legend>
+                        <label for="address1-">Adress Line 1</label>
+                        <input type="text" name="" id="address-1">
+                        <label for="address-2">Adress Line 2</label>
+                        <input type="text" name="" id="address-2">
+                        <label for="post--code">Post Code</label>
+                        <input type="text" name="" id="post--code">
+                        <label for="city_">City</label>
+                        <input type="text" name="" id="city_">
+                    </fieldset>
+                    <button type="submit">Complete Purchase</button>
+                </form>
+            </div>
+        </main>
     </div>
-  </body>
+</body>
+
 </html>
