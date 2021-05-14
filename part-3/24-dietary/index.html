@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>24 - Dietary Requirements - HTML, CSS and Git Exercises</title>
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/week3-forms.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="site-wrapper">
-      <main>
-        <h1>Codi Summit</h1>
+        <main>
+            <h1>Codi Summit</h1>
 
-        <p>
-          Let us know if you have any dietary requirements so that we can provide you with the best,
-          yummy food.
-        </p>
+            <p>
+                Let us know if you have any dietary requirements so that we can provide you with the best, yummy food.
+            </p>
 
-        <form>
-          <!-- Your multiple choice goes here -->
-          <button type="submit">Submit</button>
-        </form>
-      </main>
+            <form>
+                <!-- Your multiple choice goes here -->
+                <fieldset>
+                    <legend>Please select all of your dietary requirements</legend>
+                    <div style="display:flex;">
+                        <label for="halal">
+                        <input type="checkbox" name="" id="halal">
+                        halal</label>
+                    </div>
+                    <div style="display: block;">
+                        <label for="kosher">
+                        <input type="checkbox" name="" id="kosher">
+                        Kosher</label>
+                    </div>
+                    <div style="display: block;">
+                        <label for="vegetarian">
+                        <input type="checkbox" name="" id="vegetarian">
+                        Vegetarian</label>
+                    </div>
+                    <div style="display: block;">
+                        <label for="vegan"></label>
+                        <input type="checkbox" name="" id="vegan"> Vegan
+                        </label>
+                    </div>
+                    <div style="display: block;">
+                        <label for="gluten-free">
+                        <input type="checkbox" name="" id="gluten-free">
+                        Gluten Free</label>
+                    </div>
+                </fieldset>
+                <button type="submit">Submit</button>
+
+            </form>
+        </main>
     </div>
-  </body>
+</body>
+
 </html>
