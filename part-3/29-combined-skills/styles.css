@@ -1,1 +1,41 @@
 /* Add your own CSS code below */
+
+@media (min-width:992px) {
+    .hero__title {
+        font-size: 60px;
+    }
+}
+
+.main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media (min-width:767px) {
+    .views {
+        display: flex;
+        flex-direction: row;
+    }
+    .views a:last-child {
+        margin-left: auto;
+    }
+    .view-list__item {
+        margin-left: 20px;
+    }
+}
+
+.radio-position {
+    display: block;
+    margin-top: 10px;
+}
+
+.site-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-content p {
+    max-width: 50em;
+    line-height: 30px;
+}
